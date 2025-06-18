@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/generate": {
+      "name": "/generate",
+      "lambdaFunction": "generateResume",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

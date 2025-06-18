@@ -1,0 +1,74 @@
+{
+  "api": {
+    "resumehelperapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "generateResume"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "generateResume": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
+      "type": "manual"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_generateResume_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "generateResume"
+        }
+      ]
+    },
+    "AMPLIFY_function_generateResume_openAi": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "generateResume"
+        }
+      ]
+    },
+    "AMPLIFY_function_generateResume_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "generateResume"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    }
+  }
+}

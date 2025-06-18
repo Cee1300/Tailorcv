@@ -1,38 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f7f9;
+  color: #333;
+}
+
 .App {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.subtitle {
   text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background: #0044cc;
   color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #0033aa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.template-preview-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.template-thumb {
+  width: 100px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #f1f4f9;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.template-thumb.selected {
+  border-color: #0044cc;
+  background: #e5edff;
+}
+
+.template-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.output {
+  border: 1px solid #ccc;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  background: #fff;
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.output p {
+  margin-bottom: 1rem;
+}
+
+.output strong {
+  font-weight: bold;
+}
+
+.btn-group {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #222;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
 }

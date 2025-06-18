@@ -1,0 +1,44 @@
+# Dependency directories
+/node_modules
+/.pnp
+.pnp.js
+
+# Build outputs
+/build
+/dist
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# AWS credentials or config (if any used locally)
+.aws/
+
+# VS Code settings
+.vscode/
+
+# Logs and debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sensitive backend files
+/backend/index.js
+/aws-exports.js
+
+# Ignore test snapshots
+__snapshots__/
+
+# Optional: macOS & Windows generated files
+*.swp
+*.swo
+*.bak
+
+# Ignore PDF/DOCX generated files
+*.pdf
+*.docx

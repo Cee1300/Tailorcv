@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-resumehelper-dev-17d56-authRole",
+      "UnauthRoleArn": "arn:aws:iam::924876602048:role/amplify-resumehelper-dev-17d56-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::924876602048:role/amplify-resumehelper-dev-17d56-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-resumehelper-dev-17d56-deployment",
+      "UnauthRoleName": "amplify-resumehelper-dev-17d56-unauthRole",
+      "StackName": "amplify-resumehelper-dev-17d56",
+      "StackId": "arn:aws:cloudformation:us-east-1:924876602048:stack/amplify-resumehelper-dev-17d56/4e304070-44e5-11f0-8ec6-0affeb4a6493",
+      "AmplifyAppId": "d3n8gp4gf3eriz"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3n8gp4gf3eriz",
+          "type": "manual"
+        }
+      },
+      "function": {
+        "generateResume": {
+          "deploymentBucketName": "amplify-resumehelper-dev-17d56-deployment",
+          "s3Key": "amplify-builds/generateResume-5a7479446c3467546334-build.zip",
+          "openAi": "OPENAI_API_KEY =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"
+        }
+      },
+      "api": {
+        "resumehelperapi": {}
+      }
+    }
+  }
+}
